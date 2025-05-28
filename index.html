@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Tesla Stock Price ML Model Comparison</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tesla Stock Price Prediction: Model Comparison</h1>
+      <p>
+        Perbandingan performa 3 model machine learning untuk prediksi
+        naik/turunnya harga saham Tesla.
+      </p>
+    </header>
+    <main>
+      <section class="models">
+        <div class="model-card" id="dt">
+          <h2>Decision Tree</h2>
+          <ul>
+            <li><strong>Accuracy:</strong> 61%</li>
+            <li><strong>Precision:</strong> Lebih tinggi untuk "Naik"</li>
+            <li><strong>AUC:</strong> 0.6451</li>
+          </ul>
+          <p class="insight">
+            Paling baik dalam memprediksi kenaikan harga, namun kurang pada
+            penurunan.
+          </p>
+        </div>
+        <div class="model-card" id="nb">
+          <h2>Naive Bayes</h2>
+          <ul>
+            <li><strong>Accuracy:</strong> 52.8%</li>
+            <li><strong>AUC:</strong> 0.6049</li>
+          </ul>
+          <p class="insight">
+            Performa sedang, kurang baik pada data tidak seimbang.
+          </p>
+        </div>
+        <div class="model-card" id="knn">
+          <h2>K-Nearest Neighbors</h2>
+          <ul>
+            <li><strong>Accuracy:</strong> 58.3%</li>
+            <li><strong>AUC:</strong> 0.6217</li>
+          </ul>
+          <p class="insight">
+            Lebih baik dari Naive Bayes, sensitif terhadap pemilihan k dan
+            normalisasi fitur.
+          </p>
+        </div>
+      </section>
+      <section class="comparison">
+        <h2>Model Comparison Chart</h2>
+        <canvas id="barChart"></canvas>
+      </section>
+      <section class="conclusion">
+        <h2>Kesimpulan</h2>
+        <p>
+          Decision Tree memberikan hasil terbaik untuk prediksi naik/turun harga
+          saham Tesla pada data ini. KNN juga cukup baik setelah normalisasi.
+          Untuk hasil lebih baik, bisa dicoba fitur tambahan atau model
+          ensemble.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Developed by Muhamad Nur Arif &mdash;
+        <a href="https://github.com/arifsuz/Machine-Learning-Project-Tesla-Stock-Price-Prediction" target="_blank">GitHub</a>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

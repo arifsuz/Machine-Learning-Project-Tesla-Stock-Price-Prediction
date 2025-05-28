@@ -10,6 +10,17 @@ This project focuses on predicting Tesla's stock price movement (up or down) usi
 
 ---
 
+## Website Visualization
+
+A simple and attractive website is provided to showcase the comparison results of the three machine learning models (Decision Tree, Naive Bayes, KNN) used in this project. The website displays the accuracy and AUC of each model, along with a summary and a comparison chart.
+
+**How to use:**
+1. Buka folder `tesla-ml-model-comparison` (atau sesuai nama folder website).
+2. Jalankan file `index.html` di browser favorit Anda.
+3. Anda akan melihat tampilan perbandingan model beserta grafik visualisasi.
+
+---
+
 ## Workflow
 
 ### 1. **Data Preprocessing**
@@ -103,6 +114,7 @@ The models were evaluated using the following metrics:
 - **Confusion Matrix**: Displayed for all models to analyze prediction errors.
 - **ROC Curve**: Plotted to compare the true positive rate and false positive rate across models.
 - **Decision Tree Structure**: Visualized to understand the decision-making process.
+- **Website**: Interactive web visualization for model comparison.
 
 ---
 
@@ -125,6 +137,8 @@ This project demonstrates the application of machine learning to predict stock p
    - `DecisionTree_Histogram.ipynb`
    - `NaiveBayes_Histogram.ipynb`
    - `KNN_Histogram.ipynb`
+5. **(Optional) Buka website perbandingan model:**
+   - Buka folder website dan jalankan `index.html` di browser.
 
 ---
 
@@ -136,6 +150,7 @@ This project demonstrates the application of machine learning to predict stock p
 - **`NaiveBayes_Histogram.ipynb`**: Notebook for Naive Bayes model.
 - **`KNN_Histogram.ipynb`**: Notebook for KNN model.
 - **`Tabel 3 model.pdf`**: Analysis results of the three models.
+- **`tesla-ml-model-comparison/`**: Website folder for model comparison visualization.
 - **`README.md`**: Project documentation.
 
 ---

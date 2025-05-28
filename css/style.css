@@ -1,0 +1,92 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3 100%);
+  margin: 0;
+  color: #222;
+}
+header {
+  background: #212a3e;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0 0 0.2rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+main {
+  max-width: 1500px;
+  margin: 1.5rem auto;
+  padding: 0 0.5rem;
+}
+.models {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.model-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(33, 42, 62, 0.08);
+  padding: 1.5rem 1.2rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 300px;
+  transition: transform 0.2s;
+}
+.model-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(33, 42, 62, 0.13);
+}
+.model-card h2 {
+  margin-top: 0;
+  color: #394867;
+}
+.model-card ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.model-card .insight {
+  font-size: 0.97rem;
+  color: #576cbc;
+  margin-top: 0.5rem;
+}
+.comparison {
+  margin: 2.5rem 0 2rem 0;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(33, 42, 62, 0.06);
+  padding: 1.5rem;
+}
+.comparison h2 {
+  margin-top: 0;
+  color: #394867;
+}
+.conclusion {
+  margin: 2rem 0 1rem 0;
+  background: #f6f8fc;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  color: #222;
+}
+footer {
+  text-align: center;
+  padding: 1.2rem 0 1.2rem 0;
+  background: #212a3e;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: #f7c873;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .models {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
